@@ -1,0 +1,83 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma, sans-serif;
+  font-size: 50px;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.wrapper div {
+  display: inline-block;
+  font-size: 2em;
+  line-height: 180px;
+  width: 200px;
+  height: 200px;
+  margin: 1em;
+  text-align: center;
+  position: relative;
+}
+
+.wrapper div:nth-child(1) {
+  background: gray;
+  top: -400px;
+  animation: animation1 1s linear forwards;
+}
+
+.wrapper div:nth-child(2) {
+  background: rgb(216, 113, 113);
+  top: -400px;
+  animation: animation2 1s 1s linear forwards;
+}
+
+.wrapper div:nth-child(3) {
+  background: rgb(243, 182, 68);
+  top: -400px;
+  animation: animation3 1s 2s linear forwards;
+}
+
+@keyframes animation1 {
+  0% {
+    top: -400px;
+    background: gray;
+  }
+  
+  100% {
+    top: 200px;
+    background: gray;
+  }
+}
+
+@keyframes animation2 {
+  0% {
+    top: -400px;
+    background: rgb(216, 113, 113);
+  }
+  
+  100% {
+    top: 200px;
+    background: rgb(216, 113, 113);
+  }
+}
+
+@keyframes animation3 {
+  0% {
+    top: -400px;
+    background: rgb(243, 182, 68)
+  }
+  
+  100% {
+    top: 200px;
+    background: rgb(243, 182, 68)
+  }
+}
